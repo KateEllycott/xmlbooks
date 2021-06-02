@@ -3,8 +3,8 @@ Spring-based application which downloads all the fragments of the books and gene
 
 ## Getting started
 Go to the target directory of the project and execute with parameters  
-inputFile={input file should be in csv format}
-importFolder={}
+* inputFile={input file should be in csv format}
+* importFolder={}
 
 inputFile content format:
 
