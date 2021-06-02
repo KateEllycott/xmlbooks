@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      runAlways: false
+      id: 20210530_01
+      author: Ekaterina Sivakova
+      changes:
+        - sqlFile:
+            path: changelog/001_initial_schema.sql
+            encoding: utf8
+            relativeToChangelogFile: true

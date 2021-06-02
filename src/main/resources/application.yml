@@ -1,0 +1,24 @@
+spring:
+  batch:
+    job:
+      enabled: true
+    initialize-schema: always
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/bbb
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        temp:
+          use_jdbc_metadata_defaults: false
+    show-sql: false
+  liquibase:
+    change-log: classpath:db/db.changelog-master.yml
+server:
+  error:
+    include-stacktrace:
